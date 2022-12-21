@@ -1,11 +1,11 @@
 /* font-family: 'Playfair Display',serif;
 font-family: 'Poppins', sans-serif;*/
 :root {
-    --default-font-family:'Poppins',sans-serif;
-    --heading-font-family: "Playfair Display", serif;
-    --branding-color: #6c63ff;
-    --secondary-color: #f9f7fe;
-    --nav-color: #272142;
+   --default-font-family:'Poppins',sans-serif;
+   --heading-font-family: "Playfair Display", serif;
+   --branding-color: #6c63ff;
+   --secondary-color: #f9f7fe;
+   --nav-color: #272142;
 }
 
 .logo {
@@ -41,35 +41,40 @@ nav li.active a {
 
 @media (max-width: 900px) {
 
-    .hero {
-        padding: 60px 20px;
+   .hero {
+      padding: 60px 20px;
     }
 
-    h1 {
-        font-size: 45px;
-        line-height: 1,5;
+   h1 {
+      font-size: 45px;
+      line-height: 1,5;
     }
     
-    h2 {
-        font-size: 45px;
+   h2 {
+      font-size: 45px;
     }
     
-    .project-description {
-        padding: 0;
-        text-align: center;
+   .project-description {
+      padding: 0;
+      text-align: center;
     }
 
-    .content-container {
+   .content-container {
       text-align: center;
       padding: 0;
     }
 
-    nav a {
+   nav a {
       font-size: 14px;
     }
-    h3 {
+   h3 {
       font-size: 18px;
     }
+
+   .content {
+      text-align: center;
+      padding: 0;
+   }
 }
 
 body {
@@ -82,47 +87,51 @@ h3 {
    font-weight: bold;
 }
 
- h1 {
-    font-family: var(--heading-font-family);
-    font-weight: bold;
-    font-size: 96px;
+h1 {
+   font-family: var(--heading-font-family);
+   font-weight: bold;
+   font-size: 96px;
  }
 
- h2 {
-    font-size: 64px;
+h2 {
+   font-size: 64px;
  }
 
- h3 {
+h3 {
    font-size: 48px;
  }
 
- p {
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 30px;
+form {
+   border: 1px solid #dee2e6;
  }
 
- .hero {
-    background-color: var(--secondary-color);
-    text-align: center;
-    padding: 80px 20px;
+p {
+   font-weight: normal;
+   font-size: 16px;
+   line-height: 30px;
  }
 
- .hero p {
-    font-size: 36px;
-    font-weight: bold;
-    margin: 0;
-    color: #272142;
+.hero {
+   background-color: var(--secondary-color);
+   text-align: center;
+   padding: 80px 20px;
  }
 
- .hero h2 {
-    font-family: var(--heading-font-family);
-    font-weight: normal;
-    font-size: 24px;
-    line-height: 2;
+.hero p {
+   font-size: 36px;
+   font-weight: bold;
+   margin: 0;
+   color: #272142;
  }
 
- .content-container {
+.hero h2 {
+   font-family: var(--heading-font-family);
+   font-weight: normal;
+   font-size: 24px;
+   line-height: 2;
+ }
+
+.content-container {
    padding: 60px 20px;
  }
 
@@ -137,7 +146,6 @@ h3 {
 }
 
 .content h3 {
-   margin: 30px;
    line-height: 1.5;
    font-size: 24px;
    font-family: var(--default-font-family);
@@ -146,30 +154,31 @@ h3 {
 .content p {
    font-size: 14px;
 }
- .btn-branding {
-    background: var(--branding-color);
-    border-radius: 4px;
-    color:#fff;
-    font-size: 18px;
-    line-height: 27px;
-    padding: 15px 30px;
+
+.btn-branding {
+   background: var(--branding-color);
+   border-radius: 4px;
+   color:#fff;
+   font-size: 18px;
+   line-height: 27px;
+   padding: 15px 30px;
  }
    
  .btn-branding-outline {
-    color: var(--branding-color);
-    border: 1px solid var(--branding-color);
-    border-radius: 4px;
-    font-size: 18px;
-    line-height: 27px;
-    padding: 15px 30px;
+   color: var(--branding-color);
+   border: 1px solid var(--branding-color);
+   border-radius: 4px;
+   font-size: 18px;
+   line-height: 27px;
+   padding: 15px 30px;
  }
 
  .project-description {
-    padding: 120px 60px;
+   padding: 120px 60px;
  }
 
  footer {
-    margin: 60px 0;
+   margin: 60px 0;
  }
 
  footer .contact-box {
@@ -179,26 +188,26 @@ h3 {
  }
 
  footer .email-link {
-    text-decoration: none;
-    color: #000;
-    font-size: 24px;
+   text-decoration: none;
+   color: #000;
+   font-size: 24px;
  }
 
  footer .email-link:hover {
-    color: var(--branding-color);
+   color: var(--branding-color);
  }
 
  footer .contact-links a {
-    margin: 0 20px;
-    color: var(--branding-color);
-    background-color: var(--secondary-color);
-    padding: 10px 14px;
-    font-size: 18px;
-    border-radius: 50%;
-    transition: all 150ms ease-in-out;
+   margin: 0 20px;
+   color: var(--branding-color);
+   background-color: var(--secondary-color);
+   padding: 10px 14px;
+   font-size: 18px;
+   border-radius: 50%;
+   transition: all 150ms ease-in-out;
  }
 
  footer .contact-links a:hover {
-    color: #fff;
-    background-color: var(--branding-color);
+   color: #fff;
+   background-color: var(--branding-color);
  }
