@@ -13,7 +13,7 @@ font-family: 'Poppins', sans-serif;*/
 }
 
 nav {
-   padding: 20px 0;
+   padding: 20px;
 }
 
 ul {
@@ -37,7 +37,6 @@ nav a {
 nav a:hover 
 nav li.active a {
    color: var(--branding-color);
-
 }
 
 @media (max-width: 900px) {
@@ -68,6 +67,9 @@ nav li.active a {
     nav a {
       font-size: 14px;
     }
+    h4 {
+      font-size: 18px;
+    }
 }
 
 body {
@@ -89,6 +91,10 @@ h4 {
 
  h2 {
     font-size: 64px;
+ }
+
+ h4 {
+   font-size: 48px;
  }
 
  p {
@@ -161,4 +167,39 @@ h4 {
 
  .project-description {
     padding: 120px 60px;
+ }
+
+ footer {
+    margin: 60px 0;
+ }
+
+ footer .contact-box {
+   background-color: var(--secondary-color);
+   padding: 30px 120px;
+   border-radius: 10px;
+ }
+
+ footer .email-link {
+    text-decoration: none;
+    color: #000;
+    font-size: 24px;
+ }
+
+ footer .email-link:hover {
+    color: var(--branding-color);
+ }
+
+ footer .contact-links a {
+    margin: 0 20px;
+    color: var(--branding-color);
+    background-color: var(--secondary-color);
+    padding: 10px 14px;
+    font-size: 18px;
+    border-radius: 50%;
+    transition: all 150ms ease-in-out;
+ }
+
+ footer .contact-links a:hover {
+    color: #fff;
+    background-color: var(--branding-color);
  }
