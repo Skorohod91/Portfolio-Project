@@ -5,6 +5,39 @@ font-family: 'Poppins', sans-serif;*/
     --heading-font-family: "Playfair Display", serif;
     --branding-color: #6c63ff;
     --secondary-color: #f9f7fe;
+    --nav-color: #272142;
+}
+
+.logo {
+   max-height: 40px;
+}
+
+nav {
+   padding: 20px 0;
+}
+
+ul {
+   padding: 0;
+   margin: 0;
+}
+
+nav li {
+   display: inline;
+   list-style: none;
+   line-height: 40px;
+   margin-left: 10px;
+}
+
+nav a {
+   text-decoration: none;
+   color: var(--nav-color);
+   transition: all 100ms ease-in-out;
+}
+
+nav a:hover 
+nav li.active a {
+   color: var(--branding-color);
+
 }
 
 @media (max-width: 900px) {
@@ -31,14 +64,21 @@ font-family: 'Poppins', sans-serif;*/
       text-align: center;
       padding: 0;
     }
-}
 
-h1, h2, h3, h4 {
-   font-weight: bold;
+    nav a {
+      font-size: 14px;
+    }
 }
 
 body {
     font-family: var(--default-font-family);
+}
+
+h1,
+h2,
+h3,
+h4 {
+   font-weight: bold;
 }
 
  h1 {
